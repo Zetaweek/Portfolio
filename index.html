@@ -3,48 +3,100 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>CV - José María Correa</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>José María Correa | Web Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <nav class="navbar">
+        <a href="#inicio" class="logo">JMC</a>
 
-    <h1>José María Correa</h1>
-    <p><strong>Analista Programador | Estudiante de Ingeniería en Informática</strong></p>
-    <p>Ubicación: El Bosque, Santiago, Chile.</p>
+        <ul class="nav-links">
+            <li><a href="#Perfil">Perfil</a></li>
+            <li><a href="#Trayectoria">Trayectoria</a></li>
+            <li><a href="#portafolio">Portafolio</a></li>
+        </ul>
+    </nav>
 
-    <img src="/Ejercicio 1/source/index/foto-perfil.jpeg" alt="Foto de perfil profesional de José María Correa"
-        width="200">
 
-    <h2>Perfil Profesional</h2>
-    <p>Desarrollador Web con experiencia en ERP Odoo y enfoque en el área de Front-end. Actualmente cursando el tercer
-        año de Ingeniería en Informática en INACAP, con sólida capacidad de análisis y resolución de problemas técnicos.
-    </p>
+    <header id="inicio" class="hero">
+        <div class="hero-content">
+            <img src="source/foto-perfil.jpeg" alt="José María Correa" class="hero-img">
+            <h1>José María Correa</h1>
+            <p>Analista Programador & Front-end Developer</p>
+            <a href="#portafolio" class="cta-btn">Ver Proyectos</a>
+        </div>
+    </header>
 
-    <h2>Educación</h2>
-    <ol>
-        <li><strong>Ingeniería en Informática</strong> - INACAP (En curso)</li>
-        <li><strong>Analista Programador</strong> - INACAP (Titulado)</li>
-    </ol>
+    <div class="container">
+        <section id="Perfil" class="section-grid">
+            <div class="section-title">
+                <h2>Perfil</h2>
+            </div>
+            <div class="section-content">
+                <p>Analista Programador titulado con enfoque en desarrollo web. Actualmente cursando Ingeniería en
+                    Informática en INACAP y trabajando de forma remota en entornos ERP (Odoo).</p>
+                <div class="skills-tags">
+                    <span>Python</span> <span>HTML5</span> <span>CSS3</span> <span>Ubuntu</span> <span>JavaScript</span>
+                </div>
+            </div>
+        </section>
 
-    <h2>Experiencia Laboral</h2>
-    <ul>
-        <li><strong>Desarrollador Web (Odoo)</strong> - Trabajo Remoto: Desarrollo y mantenimiento de módulos ERP.</li>
-        <!-- <li><strong>Analista Programador</strong> - Proyecto Social Municipal: Implementación de laboratorio tecnológico
-            comunitario.</li> -->
-    </ul>
+        <section id="Trayectoria" class="section-grid">
+            <div class="section-title">
+                <h2>Trayectoria</h2>
+            </div>
+            <div class="section-content">
+                <div class="job">
+                    <h3>Web Developer (Odoo)</h3>
+                    <p><em>Trabajo Remoto | Septiembre 2025 · Actualidad</em></p>
+                    <ul>
+                        <li>Desarrollo y personalización de módulos en Odoo utilizando Python, JavaScript y XML.</li>
+                        <li>Implementación de soluciones ERP para mejorar la eficiencia operativa.</li>
+                        <li>Colaboración con equipos multidisciplinarios para integrar funcionalidades web.</li>
+                    </ul>
+                    <div class="skills-tags">
+                        <span>Python</span> <span>Odoo</span> <span>HTML5</span> <span>JavaScript</span>
+                        <span>PostgreSQL</span>
+                        <span>XML</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
 
-    <h2>Habilidades Técnicas</h2>
-    <ul>
-        <li>Python</li>
-        <li>HTML5 & CSS3</li>
-        <li>Gestión de Bases de Datos</li>
-        <li>Sistemas Operativos Linux (Ubuntu)</li>
-    </ul>
+    <section id="portafolio" class="portfolio-section">
+        <div class="container">
+            <h2>Portafolio</h2>
+            <table class="modern-table">
+                <thead>
+                    <tr>
+                        <th>Proyecto</th>
+                        <th>Vista Previa</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>CV HTML Estructurado</td>
+                        <td><img src="source/screenshot-cv.png" alt="Vista previa"></td>
+                    </tr>
+                    <!--                     
+                    <tr>
+                        <td>Ciber cafe comunitario municipalidad EL Bosque</td>
+                        <td>(Solo nombre)</td>
+                    </tr> -->
+                </tbody>
+            </table>
+        </div>
+    </section>
 
-    <h2>Contacto y Enlaces</h2>
-    <p>Puedes ver mis trabajos aquí: <a href="portafolio.html">Ver mi Portafolio</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/josemariacorrea/" target="_blank">Perfil Profesional</a></p>
-
+    <footer class="main-footer">
+        <p>© 2026 José María Correa - Santiago, Chile.</p>
+    </footer>
 </body>
 
 </html>
