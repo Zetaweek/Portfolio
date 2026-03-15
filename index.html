@@ -7,96 +7,161 @@
     <title>José María Correa | Web Developer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <nav class="navbar">
-        <a href="#inicio" class="logo">JMC</a>
 
+    <!-- CURSOR -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <a href="#inicio" class="logo">JMC<span class="logo-dot">.</span></a>
         <ul class="nav-links">
-            <li><a href="#Perfil">Perfil</a></li>
-            <li><a href="#Trayectoria">Trayectoria</a></li>
-            <li><a href="#portafolio">Portafolio</a></li>
+            <li><a href="#perfil" data-text="Perfil">Perfil</a></li>
+            <li><a href="#trayectoria" data-text="Trayectoria">Trayectoria</a></li>
+            <li><a href="#portafolio" data-text="Portafolio">Portafolio</a></li>
         </ul>
     </nav>
 
-
+    <!-- HERO -->
     <header id="inicio" class="hero">
-        <div class="hero-content">
-            <img src="source/foto-perfil.jpeg" alt="José María Correa" class="hero-img">
-            <h1>José María Correa</h1>
-            <p>Analista Programador & Front-end Developer</p>
-            <a href="#portafolio" class="cta-btn">Ver Proyectos</a>
+        <div class="hero-noise"></div>
+
+        <div class="hero-left">
+            <div class="hero-label reveal-left">Disponible para proyectos</div>
+            <h1 class="hero-name reveal-up">
+                <span>JOSÉ</span>
+                <span class="name-outlined">MARÍA</span>
+                <span>CORREA</span>
+            </h1>
+            <p class="hero-role reveal-up delay-1">Analista Programador<br><em>& Front-end Developer</em></p>
+            <a href="#portafolio" class="cta-btn reveal-up delay-2">
+                <span>Ver Proyectos</span>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.5"/>
+                </svg>
+            </a>
+        </div>
+
+        <div class="hero-right">
+            <div class="img-wrapper reveal-right">
+                <img src="source/foto-perfil.jpeg" alt="José María Correa" class="hero-img">
+                <div class="img-border"></div>
+                <div class="img-tag">
+                    <span class="mono">Santiago, CL</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-scroll">
+            <span class="mono">scroll</span>
+            <div class="scroll-line"></div>
         </div>
     </header>
 
-    <div class="container">
-        <section id="Perfil" class="section-grid">
-            <div class="section-title">
-                <h2>Perfil</h2>
-            </div>
-            <div class="section-content">
-                <p>Analista Programador titulado con enfoque en desarrollo web. Actualmente cursando Ingeniería en
-                    Informática en INACAP y trabajando de forma remota en entornos ERP (Odoo).</p>
-                <div class="skills-tags">
-                    <span>Python</span> <span>HTML5</span> <span>CSS3</span> <span>Ubuntu</span> <span>JavaScript</span>
-                </div>
-            </div>
-        </section>
+    <!-- MAIN CONTENT -->
+    <main class="container">
 
-        <section id="Trayectoria" class="section-grid">
-            <div class="section-title">
-                <h2>Trayectoria</h2>
+        <!-- PERFIL -->
+        <section id="perfil" class="section reveal-section">
+            <div class="section-eyebrow">
+                <span class="mono">01</span>
+                <div class="eyebrow-line"></div>
+                <span class="mono">Perfil</span>
             </div>
-            <div class="section-content">
-                <div class="job">
-                    <h3>Web Developer (Odoo)</h3>
-                    <p><em>Trabajo Remoto | Septiembre 2025 · Actualidad</em></p>
-                    <ul>
-                        <li>Desarrollo y personalización de módulos en Odoo utilizando Python, JavaScript y XML.</li>
-                        <li>Implementación de soluciones ERP para mejorar la eficiencia operativa.</li>
-                        <li>Colaboración con equipos multidisciplinarios para integrar funcionalidades web.</li>
-                    </ul>
-                    <div class="skills-tags">
-                        <span>Python</span> <span>Odoo</span> <span>HTML5</span> <span>JavaScript</span>
-                        <span>PostgreSQL</span>
-                        <span>XML</span>
+            <div class="section-body">
+                <h2 class="section-heading">Sobre<br><span class="outlined">mí</span></h2>
+                <div class="section-text">
+                    <p>Analista Programador titulado con enfoque en desarrollo web. Actualmente cursando Ingeniería en Informática en INACAP y trabajando de forma remota en entornos ERP (Odoo).</p>
+                    <div class="skills-grid">
+                        <div class="skill-item"><span class="mono">01</span> Python</div>
+                        <div class="skill-item"><span class="mono">02</span> HTML5</div>
+                        <div class="skill-item"><span class="mono">03</span> CSS3</div>
+                        <div class="skill-item"><span class="mono">04</span> JavaScript</div>
+                        <div class="skill-item"><span class="mono">05</span> Ubuntu</div>
+                        <div class="skill-item"><span class="mono">06</span> Odoo</div>
                     </div>
                 </div>
             </div>
         </section>
-    </div>
 
+        <!-- TRAYECTORIA -->
+        <section id="trayectoria" class="section reveal-section">
+            <div class="section-eyebrow">
+                <span class="mono">02</span>
+                <div class="eyebrow-line"></div>
+                <span class="mono">Trayectoria</span>
+            </div>
+            <div class="section-body">
+                <h2 class="section-heading">Experiencia<br><span class="outlined">laboral</span></h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-meta">
+                            <span class="mono timeline-date">Sep 2025 — Hoy</span>
+                            <div class="timeline-dot"></div>
+                        </div>
+                        <div class="timeline-content">
+                            <h3>Web Developer <span class="accent">(Odoo)</span></h3>
+                            <p class="timeline-company">Trabajo Remoto</p>
+                            <ul>
+                                <li>Desarrollo y personalización de módulos en Odoo utilizando Python, JavaScript y XML.</li>
+                                <li>Implementación de soluciones ERP para mejorar la eficiencia operativa.</li>
+                                <li>Colaboración con equipos multidisciplinarios para integrar funcionalidades web.</li>
+                            </ul>
+                            <div class="tags">
+                                <span>Python</span><span>Odoo</span><span>HTML5</span><span>JavaScript</span><span>PostgreSQL</span><span>XML</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- PORTAFOLIO -->
     <section id="portafolio" class="portfolio-section">
-        <div class="container">
-            <h2>Portafolio</h2>
-            <table class="modern-table">
-                <thead>
-                    <tr>
-                        <th>Proyecto</th>
-                        <th>Vista Previa</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>CV HTML Estructurado</td>
-                        <td><img src="source/screenshot-cv.png" alt="Vista previa"></td>
-                    </tr>
-                    <!--                     
-                    <tr>
-                        <td>Ciber cafe comunitario municipalidad EL Bosque</td>
-                        <td>(Solo nombre)</td>
-                    </tr> -->
-                </tbody>
-            </table>
+        <div class="portfolio-header reveal-section">
+            <div class="section-eyebrow">
+                <span class="mono">03</span>
+                <div class="eyebrow-line"></div>
+                <span class="mono">Portafolio</span>
+            </div>
+            <h2 class="section-heading">Proyectos<br><span class="outlined">recientes</span></h2>
+        </div>
+
+        <div class="projects-grid">
+            <article class="project-card reveal-section">
+                <div class="project-number mono">001</div>
+                <div class="project-img-wrap">
+                    <img src="source/screenshot-cv.png" alt="CV HTML Estructurado">
+                    <div class="project-overlay">
+                        <span>Ver proyecto</span>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>CV HTML Estructurado</h3>
+                    <div class="tags">
+                        <span>HTML5</span><span>CSS3</span>
+                    </div>
+                </div>
+            </article>
         </div>
     </section>
 
+    <!-- FOOTER -->
     <footer class="main-footer">
-        <p>© 2026 José María Correa - Santiago, Chile.</p>
+        <div class="footer-inner">
+            <span class="logo">JMC<span class="logo-dot">.</span></span>
+            <p class="mono">© 2026 José María Correa — Santiago, Chile</p>
+        </div>
     </footer>
+
+    <script src="main.js"></script>
 </body>
 
 </html>
