@@ -139,18 +139,20 @@
         </div>
 
         <div class="projects-grid">
-            <article class="project-card reveal-section">
+
+            <article class="project-card reveal-section" data-project-title="Restaurante"
+                data-project-tags="HTML5,CSS3,JavaScript" data-project-images="" data-project-link="">
                 <div class="project-number mono">001</div>
                 <div class="project-img-wrap">
-                    <img src="source/screenshot-cv.png" alt="CV HTML Estructurado">
+                    <img src="" alt="Restaurante">
                     <div class="project-overlay">
                         <span>Ver proyecto</span>
                     </div>
                 </div>
                 <div class="project-info">
-                    <h3>CV HTML Estructurado</h3>
+                    <h3>Restaurante</h3>
                     <div class="tags">
-                        <span>HTML5</span><span>CSS3</span>
+                        <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
                     </div>
                 </div>
             </article>
@@ -164,6 +166,58 @@
             <p class="mono">© 2026 José María Correa — Santiago, Chile</p>
         </div>
     </footer>
+
+    <!-- MODAL DE PROYECTO -->
+    <div class="project-modal" id="projectModal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Cerrar">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                </svg>
+            </button>
+
+            <div class="modal-body">
+                <!-- Carrusel de imágenes -->
+                <div class="carousel-container">
+                    <div class="carousel-wrapper">
+                        <div class="carousel-slides" id="carouselSlides">
+                            <!-- Las imágenes se cargarán dinámicamente -->
+                        </div>
+                    </div>
+                    <button class="carousel-btn carousel-prev" aria-label="Anterior">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                    <button class="carousel-btn carousel-next" aria-label="Siguiente">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                    <div class="carousel-indicators" id="carouselIndicators">
+                        <!-- Los indicadores se cargarán dinámicamente -->
+                    </div>
+                </div>
+
+                <!-- Información del proyecto -->
+                <div class="modal-info">
+                    <h2 class="modal-title" id="modalTitle"></h2>
+                    <div class="modal-tags" id="modalTags">
+                        <!-- Las tecnologías se cargarán dinámicamente -->
+                    </div>
+                    <a href="#" class="modal-cta-btn" id="modalProjectLink" target="_blank">
+                        <span>Ir al proyecto</span>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.5" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="main.js"></script>
 </body>
